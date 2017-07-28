@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bambil/bamboo-trap/issues"
   },
-  "homepage": "https://github.com/bambil/bamboo-trap#readme"
+  "homepage": "https://github.com/bambil/bamboo-trap#readme",
+  "dependencies": {
+    "socket.io": "^2.0.3"
+  }
 }
