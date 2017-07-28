@@ -1,0 +1,19 @@
+{
+  "name": "@ibamboo/trap",
+  "version": "1.0.0",
+  "description": "Bamboo trap component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bambil/bamboo-trap.git"
+  },
+  "author": "Parham Alvani <parham.alvani@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bambil/bamboo-trap/issues"
+  },
+  "homepage": "https://github.com/bambil/bamboo-trap#readme"
+}
