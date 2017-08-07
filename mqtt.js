@@ -2,8 +2,7 @@
 var server = require('http').createServer();
 var io = require('socket.io')(server);
 var mqtt = require('mqtt');
-var socket = io();
-var conn = mqtt.connect( '127.0.0.1:1883', function(err, client) {
+var conn = mqtt.connect( 'mqtt:iot.ceit.aut.ac.ir:58904', function(err, client) {
   if (err) throw err;
   client.connect({
     protocolId: 'MQIsdp',
@@ -11,6 +10,11 @@ var conn = mqtt.connect( '127.0.0.1:1883', function(err, client) {
     clientId: 'example',
     keepalive: 30000
   });
+  client.on('connect' , function(){
+    console.log("connected ! ")
+    client.subscribe('presence')
+    lient.publish('presence', 'Hello mqtt')
+  })
   client.on('message', function(topic, message) {
     console.log(message.toString(topic))
     io.emit('my message' , topic)
