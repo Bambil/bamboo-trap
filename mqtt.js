@@ -8,9 +8,11 @@ client.on('connect' , function(){
     console.log("connected ! ")
     client.subscribe('presence')
     client.publish('presence', 'Hello mqtt')
+    io.emit('my message' , "helllooooo")
+
   })
   client.on('message', function(topic, message) {
-    console.log(topic)
-    io.emit('my message' , topic)
+    console.log("here")
+    console.log(topic , message )
     // socket.emit('my message', $('#m').val());
   });  
