@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bambil/bamboo-trap#readme",
   "dependencies": {
-    "@ibamboo/component": "^1.3.1",
+    "@ibamboo/component": "^1.5.0",
     "socket.io": "^2.0.3",
     "winston": "^2.3.1"
   }
