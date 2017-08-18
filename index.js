@@ -10,12 +10,12 @@
 /* Configuration */
 const config = require('config')
 
-/* winston.js */
-const winston = require('winston')
+/* Command Line Interface */
+const vorpal = require('vorpal')()
+const chalk = require('chalk')
 
-/* Configure CLI output on the default logger */
-winston.cli()
-winston.info(' * 18.20 at Sep 07 2016 7:20 IR721')
+vorpal.log(' * 18.20 at Sep 07 2016 7:20 IR721')
+vorpal.delimiter(`${chalk.green('Bamboo')} - ${chalk.rgb(255, 177, 79)('Trap')} > `).show()
 
 /* socket.io initiation */
 const app = require('http').createServer()
@@ -32,9 +32,9 @@ new BambooComponent({
     name: 'trap',
     subscribes: ['log']
 }).on('ready', () => {
-    winston.info(` * MQTT at ${config.connectivity.host}:${config.connectivity.port}`)
+  vorpal.log(` * MQTT at ${config.connectivity.host}:${config.connectivity.port}`)
 }).on('log', (message) => {
-  winston.data(message)
+  vorpal.log(message)
   io.emit('raw', {
     type: 'log',
     data: {
