@@ -23,10 +23,10 @@ const BambooTrap = require('./src/trap')
 const bambooTrap = new BambooTrap(config.http.port)
 
 new BambooComponent({
-    mqttHost: config.connectivity.host,
-    mqttPort: config.connectivity.port,
-    name: 'trap',
-    subscribes: ['log']
+  mqttHost: config.connectivity.host,
+  mqttPort: config.connectivity.port,
+  name: 'trap',
+  subscribes: ['log']
 }).on('ready', () => {
   vorpal.log(` * MQTT at ${config.connectivity.host}:${config.connectivity.port}`)
 }).on('log', (message) => {
@@ -34,7 +34,10 @@ new BambooComponent({
   bambooTrap.message('raw', {
     type: 'log',
     data: {
-      'agent_id': `${message.tenant}/${message.name}`
+      'agent_id': `${message.tenant}/${message.name}`,
+      'device_id': `${message.data.id}`,
+      'type': `${message.data.type}`,
+      'states': `${message.data.state}`
     }
   })
 })
