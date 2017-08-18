@@ -18,8 +18,10 @@
   "homepage": "https://github.com/bambil/bamboo-trap#readme",
   "dependencies": {
     "@ibamboo/component": "^1.5.0",
+    "chalk": "^2.1.0",
     "config": "^1.26.1",
     "socket.io": "^2.0.3",
+    "vorpal": "^1.12.0",
     "winston": "^2.3.1"
   },
   "devDependencies": {
