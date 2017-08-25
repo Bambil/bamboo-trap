@@ -4,13 +4,16 @@
   "description": "Bamboo trap component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "eslint --color src/*.js index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bambil/bamboo-trap.git"
   },
-  "author": "Parham Alvani <parham.alvani@gmail.com>",
+  "contributors": [
+    "Parham Alvani <parham.alvani@gmail.com>",
+    "Iman Tabrizian <tabrizian@outlook.com>"
+  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/bambil/bamboo-trap/issues"
