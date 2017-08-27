@@ -17,3 +17,12 @@ Bamboo is an IoT platfrom that is the product of three teams:
 ## Trap
 Trap component provides a real-time way for applications in order to communicate with
 Bamboo platform.
+
+## Configuration
+
+| Environment Name | JSON Name | Description |
+|:----------------:|:---------:|:------------|
+| BAMBOO_CONNECTIVITY_HOST | `connectivity.host` | Bamboo connectivity host address |
+| BAMBOO_CONNECTIVITY_PORT | `connectivity.port` | Bamboo connectivity port number |
+| BAMBOO_HTTP_HOST | `http.host` | HTTP server listening host |
+| BAMBOO_HTTP_PORT | `http.port` | HTTP server listening port |
