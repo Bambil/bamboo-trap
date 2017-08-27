@@ -36,6 +36,7 @@ new BambooComponent({
     data: {
       'agent_id': `${message.tenant}/${message.name}`,
       'device_id': `${message.data.id}`,
+      'timestamp': `${message.data.timestamp}`,
       'type': `${message.data.type}`,
       'states': `${message.data.state}`
     }
