@@ -9,7 +9,7 @@ const numCPUs = require('os').cpus().length;
 if (cluster.isMaster) {
   console.log(`Master ${process.pid} is running`);
 
-  // Fork workers.
+  //! Fork workers.
   for (let i = 0; i < numCPUs; i++) {
     cluster.fork();
   }
@@ -19,10 +19,10 @@ if (cluster.isMaster) {
   });
 } else {
 
-    //connect to mqtt
+    //! connect to mqtt
     var client = mqtt.connect( 'mqtt:iot.ceit.aut.ac.ir:58904')
 
-    //sending counter message
+    //! sending counter message
     client.on('connect' , function(){
         console.log("connected ! ")
         client.subscribe('presence') 
@@ -33,18 +33,18 @@ if (cluster.isMaster) {
         }, 1000)
     })
 
-    //send message to socket io
+    //! send message to socket io
     client.on('message', function(topic, message) {
         console.log(topic , message.toString())
         io.emit('my message' , message.toString())  
     });
 
-    //html file
+    //! html file
     app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
         });
     
-    //http port 
+    //! http port 
     http.listen(3000, function(){
         console.log('listening on *:3000');
     });
