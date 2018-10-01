@@ -29,6 +29,7 @@ client.on('connect', () => {
   client.subscribe('i1820/projects/+/things/+/assets/+/state')
 })
 client.on('message', (topic, message) => {
-  vorpal.log(message)
-  i1820Trap.message('raw', message)
+  const state = JSON.parse(message)
+  vorpal.log(state)
+  i1820Trap.message('states', state)
 })
