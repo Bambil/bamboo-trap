@@ -15,7 +15,7 @@ const vorpal = require('vorpal')()
 const chalk = require('chalk')
 
 vorpal.log(' * 18.20 at Sep 07 2016 7:20 IR721')
-vorpal.delimiter(`${chalk.green('I1820')} - ${chalk.rgb(255, 177, 79)('Trap')} > `).show()
+vorpal.delimiter(`${chalk.rgb(255, 177, 79)('I1820')} - ${chalk.green('trap')} > `).show()
 
 /* I1820 component initiation */
 const I1820Trap = require('./src/trap')
