@@ -8,7 +8,8 @@
  * +===============================================
  */
 
-class BambooTrap {
+class I1820Trap {
+  // create new socket.io server that listens on given port
   constructor (port) {
     const app = require('http').createServer()
     this.io = require('socket.io')(app)
@@ -16,9 +17,10 @@ class BambooTrap {
     app.listen(port)
   }
 
-  message (name, data) {
-    this.io.of('/Bamboo').emit(name, data)
+  // messages publishes data on given topic
+  message (topic, data) {
+    this.io.of('/I1820').emit(topic , data)
   }
 }
 
-module.exports = BambooTrap
+module.exports = I1820Trap
