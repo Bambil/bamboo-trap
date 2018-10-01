@@ -31,5 +31,5 @@ client.on('connect', () => {
 client.on('message', (topic, message) => {
   const state = JSON.parse(message)
   vorpal.log(state)
-  i1820Trap.message('states', state)
+  i1820Trap.message(`i1820/projects/${state.project}`, state)
 })
