@@ -22,6 +22,7 @@
   "dependencies": {
     "chalk": "^2.1.0",
     "config": "^1.26.1",
+    "mqtt": "^2.18.8",
     "socket.io": "^2.1.1",
     "vorpal": "^1.12.0",
     "winston": "^2.3.1"
