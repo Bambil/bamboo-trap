@@ -21,7 +21,6 @@ vorpal.delimiter(`${chalk.green('I1820')} - ${chalk.rgb(255, 177, 79)('Trap')} >
 const I1820Trap = require('./src/trap')
 const i1820Trap = new I1820Trap(config.http.port)
 
-
 /* MQTT connection events and handlers */
 const mqtt = require('mqtt')
 var client = mqtt.connect(`mqtt://${config.connectivity.host}:${config.connectivity.port}`)
