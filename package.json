@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/I1820/trap#readme",
   "dependencies": {
-    "chalk": "^2.1.0",
-    "config": "^1.26.1",
-    "mqtt": "^2.18.8",
-    "socket.io": "^2.1.1",
-    "vorpal": "^1.12.0",
-    "winston": "^2.3.1"
+    "chalk": "latest",
+    "config": "latest",
+    "mqtt": "latest",
+    "socket.io": "latest",
+    "vorpal": "latest",
+    "winston": "latest"
   },
   "devDependencies": {
     "eslint": "^4.4.1",
