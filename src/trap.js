@@ -19,7 +19,7 @@ class I1820Trap {
 
   // messages publishes data on given topic
   message (topic, data) {
-    this.io.of('/I1820').emit(topic , data)
+    this.io.of('/I1820').emit(topic, data)
   }
 }
 
