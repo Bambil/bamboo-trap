@@ -2,7 +2,7 @@
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 
 [![npm](https://img.shields.io/npm/v/@ibamboo/trap.svg?style=flat-square)](https://www.npmjs.com/package/@i1820/trap)
-
+[![Travis branch](https://img.shields.io/travis/com/I1820/trap/master.svg?style=flat-square)](https://travis-ci.com/I1820/trap)
 
 ## Introduction
 Trap component provides a real-time way for applications in order to communicate with
