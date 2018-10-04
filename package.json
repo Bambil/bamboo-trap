@@ -1,7 +1,7 @@
 {
   "name": "@i1820/trap",
-  "version": "1.0.0",
-  "description": "I1820 IoT platform trap component",
+  "version": "1.0.1",
+  "description": "I1820 Platform - trap component",
   "main": "index.js",
   "scripts": {
     "test": "eslint --color src/*.js index.js"
