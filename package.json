@@ -22,13 +22,13 @@
   "dependencies": {
     "chalk": "latest",
     "config": "latest",
-    "mqtt": "latest",
-    "socket.io": "latest",
+    "mqtt": "^4.3.7",
+    "socket.io": "^4.5.2",
     "vorpal": "latest",
     "winston": "latest"
   },
   "devDependencies": {
-    "eslint": "^4.4.1",
+    "eslint": "^8.24.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^5.1.1",
